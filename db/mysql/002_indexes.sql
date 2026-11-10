@@ -1,0 +1,12 @@
+CREATE INDEX ix_projects_owner_status ON projects(owner_id, status);
+CREATE INDEX ix_gpus_requirements ON gpus(status, memory_gb, compute_capability, utilization_pct);
+CREATE INDEX ix_models_project ON models(project_id, created_at);
+CREATE INDEX ix_datasets_project ON datasets(project_id, created_at);
+CREATE INDEX ix_experiments_project_status ON experiments(project_id, status, created_at);
+CREATE INDEX ix_jobs_status_priority ON training_jobs(status, priority DESC, submitted_at);
+CREATE INDEX ix_jobs_experiment ON training_jobs(experiment_id, submitted_at);
+CREATE INDEX ix_usage_job_time ON resource_usage(job_id, recorded_at);
+CREATE INDEX ix_usage_gpu_time ON resource_usage(gpu_id, recorded_at);
+CREATE INDEX ix_results_experiment_time ON experiment_results(experiment_id, recorded_at);
+CREATE INDEX ix_history_job_time ON job_status_history(job_id, changed_at);
+CREATE INDEX ix_audit_created ON audit_log(created_at, audit_id);

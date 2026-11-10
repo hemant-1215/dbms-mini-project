@@ -1,0 +1,7 @@
+case,mode,iterations,median_ms,rows
+jobs_by_status_priority,with_index,5,0.384,36
+jobs_by_status_priority,without_index,5,0.293,36
+usage_by_job_time,with_index,5,0.747,354
+usage_by_job_time,without_index,5,9.703,354
+history_by_job_time,with_index,5,0.212,2
+history_by_job_time,without_index,5,0.171,2
