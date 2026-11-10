@@ -1,0 +1,11 @@
+[[31mERROR[0m] - (starship::print): Under a 'dumb' terminal (TERM=dumb).
+[[31mERROR[0m] - (starship::print): Under a 'dumb' terminal (TERM=dumb).
+**/node_modules
+**/.next
+**/dist
+**/coverage
+.git
+.env
+.env.*.local
+docs/test-evidence/local-*.md
+benchmark/results/*.csv
